@@ -9,9 +9,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <title>Product Card</title>
     <style>
-        .accoudioin-item {
-            outline: none !important;
-            border: none !important;
+        .border-red {
+            border: 1px solid red;
+        }
+
+        .border-black {
+            border: 1px solid black;
+        }
+
+        .W-60 {
+            width: 60% !important;
+        }
+
+        .v-mid {
+            position: relative;
+            top: 20px;
+            /* transform: translateY(-50%); */
         }
     </style>
 </head>
@@ -19,7 +32,7 @@
 <body>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-lg-4 sbi mb-5">
+            <div class="col-lg-4 col-sm-12 sbi mb-5">
                 <div class="card bg-white text-center pt-5 pb-3 ps-3 pe-3">
                     <img src="sbi.png" alt="sbi" style="height: 50px;" class="d-block mx-auto">
                     <h3 class="mt-4">State Bank Of India</h3>
@@ -33,22 +46,26 @@
                                 </button>
                             </h2>
                             <div id="SbiCollapseOne" 
-                            class="accordion-collapse collapsed show" 
+                            class="accordion-collapse collapse" 
                             data-bs-parent="#accordion">
                                 <div class="accordion-body">
                                     <div class="d-flex justify-content-between">
-                                        <span>Monthly Pension</span>
-                                        <span>Rs. 1234</span>
+                                        <span class="text-start W-60">Monthly Pension to pensioner</span>
+                                        <span class="text-end">Rs. 10,234</span>
                                     </div>
                                     <hr>
                                     <div class="d-flex justify-content-between">
-                                        <span>Monthly Pension after death</span>
-                                        <span>N/A</span>
+                                        <span class="text-start W-60">
+                                            Monthly pension to spouse after expiry of pensioner
+                                        </span>
+                                        <span class="text-end">N/A</span>
                                     </div>
                                     <hr>
                                     <div class="d-flex justify-content-between">
-                                        <span>Monthly Pension after death of spouse</span>
-                                        <span>N/A</span>
+                                        <span class="text-start W-60">
+                                            ROC after expiry of pensioner 
+                                        </span>
+                                        <span class="text-end">N/A</span>
                                     </div>
                                 </div>
                             </div>
@@ -64,22 +81,26 @@
                             <div id="SbiCollapseTwo" 
                             class="accordion-collapse collapse" 
                             data-bs-parent="#accordion">
-                                <div class="accordion-body">
-                                    <div class="d-flex justify-content-between">
-                                        <span>Monthly Pension</span>
-                                        <span>Rs. 1234</span>
-                                    </div>
-                                    <hr>
-                                    <div class="d-flex justify-content-between">
-                                        <span>Monthly Pension after death</span>
-                                        <span>Rs. 1234</span>
-                                    </div>
-                                    <hr>
-                                    <div class="d-flex justify-content-between">
-                                        <span>Monthly Pension after death of spouse</span>
-                                        <span>Rs. 1234</span>
-                                    </div>
+                            <div class="accordion-body">
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-start W-60">Monthly pension to pensioner</span>
+                                    <span class="text-end">Rs.  6,877</span>
                                 </div>
+                                <hr>
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-start W-60">
+                                        Monthly pension to spouse after expiry of pensioner
+                                    </span>
+                                    <span class="text-end">Rs. 6,877</span>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between">
+                                    <span class="text-start W-60 p-0 m-0">
+                                        ROC after expiry of pensioner and spouse
+                                    </span>
+                                    <span class="text-end">Rs. 1,548,242</span>
+                                </div>
+                            </div>
                             </div>
                         </div>
                         <div class="accordion-item">
@@ -95,18 +116,22 @@
                             data-bs-parent="#accordion">
                                 <div class="accordion-body">
                                     <div class="d-flex justify-content-between">
-                                        <span>Monthly Pension</span>
-                                        <span>Rs. 1234</span>
+                                        <span class="text-start W-60">Monthly pension to pensioner</span>
+                                        <span class="text-end">Rs. 6,864</span>
                                     </div>
                                     <hr>
                                     <div class="d-flex justify-content-between">
-                                        <span>Monthly Pension after death</span>
-                                        <span>Rs. 1234</span>
+                                        <span class="text-start W-60">
+                                            Monthly pension to spouse after expiry of pensioner
+                                        </span>
+                                        <span class="text-end">Rs. 6,864</span>
                                     </div>
                                     <hr>
                                     <div class="d-flex justify-content-between">
-                                        <span>Monthly Pension after death of spouse</span>
-                                        <span>Rs. 1234</span>
+                                        <span class="text-start W-60 p-0 m-0">
+                                            ROC after expiry of pensioner and spouse
+                                        </span>
+                                        <span class="text-end">Rs. 11,548,242</span>
                                     </div>
                                 </div>
                             </div>
@@ -117,5 +142,4 @@
         </div>
     </div>
 </body>
-
 </html>
