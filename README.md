@@ -1,6 +1,7 @@
 # Compare Annuity Plans
 
 Front end code for displaying excessive information
+
 Single page appilcation
 
 ### Bootstrap 5 components used
